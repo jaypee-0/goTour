@@ -1,0 +1,309 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
+// Variabels
+$orcol: #E76F51;
+body {
+    color: white;
+    font-size: 16px;
+    background-color: black;
+}
+.style-orange {
+    color: $orcol!important;
+}
+// Nav
+.navbarT.active {
+    background: linear-gradient(180deg, rgba(231, 111, 81, 0.8), rgba(255, 255, 255, 0));
+}
+.navbarT {
+    background-color: inherit;
+}
+.navigationb {
+    .nav-link {
+        font-size: 16px;
+        color: white!important;
+        font-family: "Roboto", serif!important;        
+    }
+    .navbarbrandb {
+        font-size: 31px!important;
+        font-weight: bold;
+    }.btn {
+        padding: 0.08rem 1rem;
+    }
+    input {
+        background-color: inherit!important;
+        color: white!important;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(./assets/menu.png);
+    }
+}
+@media (min-width: 568px) and (max-width: 1024px) {
+    .nav-link {  
+        padding: 0.5rem 0.5rem;
+    }
+}
+// LandingPage
+#landing {
+    h1 {
+        font-size: 60px;
+        font-weight: 900;
+        font-family: 'Poppins', sans-serif;
+    }
+    p {
+        font-size: 21px;
+        font-family: "Lato", sans-serif;
+    }
+    .bi-chevron-down{
+        font-size: 2rem;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 568px) {
+    #landing {
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+// Explore 
+#Explore {
+    h1 {
+        font-size: 45px;
+        font-family: "Roboto", sans-serif;
+    }
+    p {
+        font-size: 17px;
+        font-family: "Lato", sans-serif;
+    }
+    button {
+        background-color: #E76F51;
+        color: white;
+    }
+}
+@media screen and (max-width: 568px) {
+    #Explore {
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}
+// Beautiful Places
+#path12 {
+    margin-left: 3rem;
+}
+
+
+// Image Slider
+#image-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    overflow: scroll;
+    box-sizing: border-box;
+    padding: 0 20px;
+    .sliderT img {
+        width: 320px;
+        padding: 0 10px;
+    }
+}
+#image-slider::-webkit-scrollbar {
+    width: 0;
+}
+@media screen and (max-width: 768px) {
+    #image-slider {
+        .sliderT img {
+            width: 200px;
+        }
+    }
+    #beautifulPlaces {
+        img {
+            max-width: 90%;
+            text-align: center;
+        }
+}
+
+}
+// Choose Us
+#chooseus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    word-wrap: break-word;
+}
+@media (min-width: 567px) and (max-width: 768px) {
+    #chooseus {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 567px) {
+    #chooseus {
+        flex-direction: column;
+    }
+    .navbar-collapse {
+        background-color: black;
+    }
+}
+#chooseUs {
+    button {
+        background-color: #E76F51;
+        color: white;
+    }
+}
+// Testimonials
+#carousel {
+    width: 50%;
+    margin: auto;
+    .rec-dot{
+        background-color: #707070;
+        border-radius: 0;
+        width: 30px;
+        height: 3px;
+    }
+    .rec-dot:hover{        
+        box-shadow: 0 0 1px 1px $orcol;
+    }
+    .rec-dot_active {        
+        background-color: $orcol;
+        box-shadow: 0 0 1px 1px $orcol;
+    }
+}   
+@media screen and (max-width: 768px) {
+    #carousel {
+        width: 100%;
+    }
+}
+// Blog Posts
+#blogPosts {
+    width: 75%;
+}
+#path13 {
+    margin-left: 7rem;
+}
+@media (min-width: 769px) and (max-width: 1280px) {
+    #checkOut {
+        padding: 0!important;
+    }
+    #blogPosts {
+        width: 100%;
+        
+    } 
+    .cardT {
+        max-width: 30%;
+    }  
+    #path13 {
+        margin-left: 0!important;
+        margin-top: 0;
+    }
+    #blog > .img-fluid {
+        max-width: 85%!important;
+    }
+    .cardT {
+        h3 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        h4 {
+            font-size: 0.9rem;
+        }
+    }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+    #blogPosts {
+        .cardT {
+            width: 30%
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    #blogPosts {
+        width: 100%;
+        .cardT {
+            h3 {
+                margin: 0;
+                font-size: 1.2rem;
+            }
+            h4 {
+                margin-top: 6px;
+                font-size: 0.9rem;
+            }
+        }
+    }  
+    #checkOut {
+        padding: 0!important;
+    }  
+    #path13 {
+        display: none;
+        margin-left: 0px!important;
+        margin-top: 2rem!important;
+        max-height: 75%;
+    }
+}
+@media screen and (max-width:568px) {
+    .cardT {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        margin-bottom: 3rem;
+        flex-direction: column;
+        border-radius: 15px 15px 0px;
+    }
+}
+// Footer
+footer {    
+    h2 {
+        font-family: "Roboto";
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h4, p {
+        font-family: "Lato", sans-serif ;
+    }
+    p {
+        margin: 0;
+    }
+    h4 {
+        color: $orcol; 
+    }
+}
+// ScrollUpButton
+#scrollUpButton {
+    button {
+        border: 1px solid white;
+        border-radius: 8px;
+        position: absolute;
+        right: 8%;
+        bottom: 5%;
+        background-color: black;
+        color: white;   
+    }
+    button:hover{
+        color: black;          
+        border: 1px solid black;
+        background: $orcol;
+    }
+    button:focus{        
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width: 520px) {
+    #scrollUpButton {        
+        button{
+            right: 3%;
+        }            
+    }  
+}

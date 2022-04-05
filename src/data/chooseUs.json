@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "icon": "../image/happy.svg",
+        "captionNo": "30k",
+        "captionTitle": "happy clients",
+        "captionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed"
+    },
+    {
+        "id": "2",
+        "icon": "../image/location.svg",
+        "captionNo": "25k",
+        "captionTitle": "completed tours",
+        "captionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed"
+    },
+    {
+        "id": "3",
+        "icon": "../image/earth.svg",
+        "captionNo": "70+",
+        "captionTitle": "countries visited",
+        "captionText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed"
+    }
+]
