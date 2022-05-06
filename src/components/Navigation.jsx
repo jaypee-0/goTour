@@ -16,7 +16,7 @@ const Navigation = () => {
       useEffect(() => {
         changeNavBg()
         window.addEventListener("scroll", changeNavBg)
-      })
+      },[])
   return (
     <div className='row navigationb'>
         <Navbar className={navbar ? "navbarT active" : "navbarT"} collapseOnSelect expand="sm" bg="inherit fixed-top">
