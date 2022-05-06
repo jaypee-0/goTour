@@ -2,7 +2,6 @@ import React from "react";
 import "./components/Fontawesome";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import background from "./assets/silas-baisch-Wn4ulyzVoD4-unsplash.png";
 import Explore from "./components/Explore"
 import ChooseUs from "./components/ChooseUs"
 import Carousel from 'react-elastic-carousel'
@@ -12,17 +11,10 @@ import path13 from "./assets/Path 13.png"
 import plane from "./assets/airplane.png"
 import ScrollButton from "./components/ScrollButton";
 
-const landingImg={
-  backgroundImage: `url(${background})`,
-  height:'100vh',
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',  
-  boxShadow: '0 2 10 0 rgba(0,0,0,0.2)'
-};
 function App() {
   return (
     <div>      
-      <div id='landing' className='d-flex align-items-center' style={landingImg}>
+      <div id='landing' className='d-flex align-items-center' >
         <div className="container container-md">
           <Navigation />
           <div className='text-center d-flex vh-100 flex-column'>
