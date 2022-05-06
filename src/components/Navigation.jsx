@@ -23,7 +23,7 @@ const Navigation = () => {
             <NavLink as={Link} to="/"><span className='navbarbrandb'><span className='style-orange'>Go</span>Tour</span></NavLink>
                 <Navbar.Toggle aria-controls='navbarScroll' data-bs-target="#navbarScroll" />
                 <Navbar.Collapse id='navbarScroll'>
-                    <form className="d-none d-lg-flex mx-auto">
+                    <form className="d-none d-lg-flex mx-auto ">
                         <i className="bi bi-search position-absolute pt-2 pl-3"></i>
                         <input className="form-control mx-auto bg-inherit rounded-pill px-5" type="search" placeholder="Search..." aria-label="Search" />                        
                     </form>
