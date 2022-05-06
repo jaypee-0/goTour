@@ -16,7 +16,8 @@ const landingImg={
   backgroundImage: `url(${background})`,
   height:'100vh',
   backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
+  backgroundRepeat: 'no-repeat',  
+  boxShadow: '0 2 10 0 rgba(0,0,0,0.2)'
 };
 function App() {
   return (

@@ -32,8 +32,15 @@ body {
         padding: 0.08rem 1rem;
     }
     input {
-        background-color: inherit!important;
+        background-color: rgba(255, 255, 255, 0.4)!important;
         color: white!important;
+        &:focus {
+            border: 2px solid blanchedalmond;
+            box-shadow: unset;
+        }
+        &::placeholder {
+            color: white!important;
+        }
     }
     .navbar-light .navbar-toggler-icon {
         background-image: url(./assets/menu.png);
